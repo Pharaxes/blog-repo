@@ -1,3 +1,9 @@
+# PROYECTO FINAL - BLOG CON DJANGO
+
+Este es un proyecto de blog desarrollado con Django, incluye funcionalidades básicas de un blog, como la creación, edición y eliminación de publicaciones, así como la gestión de usuarios.
+
+## ESTRUCTURA DEL PROYECTO
+
 ```
 ├── entorno/            <--- Carpeta del entorno
 │ ├── Scripts/
@@ -99,4 +105,34 @@
 │ ├── requeriments.txt    <--- Archivo requeriments.txt - Enlista los paquetes
 | └── ...
 └── ...
+```
+
+## Comandos
+
+```
+python --version
+
+pip --version
+
+python -m virtualenv --version
+
+pip install virtualenv
+
+python -m virtualenv entorno
+
+source entorno/Scripts/activate
+
+pip list
+
+pip freeze
+
+pip freeze > requirements.txt
+
+pip install django
+
+git clone URL_REPO .
+
+django-admin startproject blog
+
+python blog/manage.py runserver
 ```
