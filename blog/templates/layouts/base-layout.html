@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>{% block title_layout %} {% endblock title_layout %}</title>
+</head>
+<body class="bg-red-200 text-black-900">
+    
+    {% block content_layout %}  {% endblock content_layout %}
+        
+</body>
+</html>
