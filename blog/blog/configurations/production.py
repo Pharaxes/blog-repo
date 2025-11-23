@@ -1,7 +1,5 @@
 from .base import *
 
-from .base import *
-
 # TODO: Dejar solo el dominio de prod
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'mi-dominio-prod-ejemplo.com']
 
