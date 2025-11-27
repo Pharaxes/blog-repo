@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <script src="{% static 'js/tailwind.js' %}"></script>
+    <title>
+        {% block title_layout %}  {% endblock title_layout %}
+    </title>
+    <style type="text/tailwindcss">
+        @theme{
+            --color-primary: #cb0000ff;
+            --color-secondary: #aad90fff;
+        }
+    </style>
+</head>
+<body class="min-w-[280px] bg-secondary" > {% comment %}jugar con los breakpoints{% endcomment %}
+
+    {% block content_layout %}  {% endblock content_layout %}
+        
+</body>
+</html>

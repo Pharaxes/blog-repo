@@ -1,0 +1,7 @@
+entorno
+__pycache__
+db.sqlite3
+.vscode
+/blog/media
+staticfiles
+.env
