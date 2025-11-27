@@ -2,13 +2,15 @@
 
 {% block title_layout %}
     IA |
-    {% block title %}Inicio Sesion{% endblock title %}
+    {% block title %} BLOG {% endblock title %}
+
 {% endblock title_layout %}
 
 
 {% block content_layout %}
 
+    {% include 'components\commons\header.html' %}
     {% block content %}Cargar Contenido{% endblock content %}
-    {% include 'components\commons\footer.html' %}
+
 
 {% endblock content_layout %}

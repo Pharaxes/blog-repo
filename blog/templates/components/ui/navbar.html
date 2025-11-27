@@ -1,0 +1,11 @@
+<nav class="w-full flex justify-between bg-blue-500">
+
+    <a href="{% url 'home' %}">Inicio</a>
+     
+    <ul class="flex gap-4 md:gap-8 lg:gap-12">
+        <li><a href="{% url 'post:post-list' %}">Ver Posts</a></li>
+                                   
+    </ul>
+    
+    <a href="{% url 'user:user-profile' %}">Perfil</a>  {% comment %} se puede usar SVG en lugar de texto  {% endcomment %}
+</nav>
