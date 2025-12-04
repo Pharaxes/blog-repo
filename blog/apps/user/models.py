@@ -26,3 +26,15 @@ class User(AbstractUser):
     def get_avatar_url(self):
         if self.avatar:
             return self.avatar.url
+        
+    @property
+    def is_registered(self):
+        pass
+
+    @property
+    def is_collaborator(self):
+        pass
+
+    @property
+    def is_admin(self):
+        pass
