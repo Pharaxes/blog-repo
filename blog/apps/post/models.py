@@ -9,7 +9,7 @@ def get_image_filename(instance, filename):
     post_id = instance.post.id
     image_count = instance.post.images.count()
     _, file_extension = os.path.splitext(filename)
-    new_filename = f"post-{post_id.id}-image-{image_count+1}"
+    new_filename = f"post-{post_id.id}-image-{image_count+1}{file_extension}"
     #user/avatar/post-uuid-image-1.png
     return os.path.join("post/cover/", new_filename)
 
